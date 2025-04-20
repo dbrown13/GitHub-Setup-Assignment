@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('verify make is installed') {
       steps {
-        sh 'make --version'
+        bat 'make --version'
       }
     }
     stage('run make') {
       steps {
-        sh 'make'
+        bat 'make'
       }
     }
   }
