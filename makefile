@@ -16,7 +16,7 @@ CC = gcc
 CFLAGS = -Wall -g 
 
 # Source files
-SOURCES = xml_parser.c
+SOURCES = main.c
 
 # Header files
 # HEADERS = helper.h
