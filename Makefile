@@ -6,7 +6,7 @@ CFLAGS = -Wall -g
 SRCS = xml_parser.c
 
 # Header files
-#HDRS = helper.h
+HDRS = iostream.h
 
 # Object files
 OBJS = $(SRCS:.c=.o)
@@ -18,7 +18,7 @@ EXEC = xml_parser
 all: $(EXEC)
 
 # Rule to create the executable
-$(EXEC): $(OBJS)
+$(EXEC): $(OBJS) $(HDRS)
 	$(CC) $(CFLAGS) -o $(EXEC) $(OBJS)
 
 # Rule to create object files
