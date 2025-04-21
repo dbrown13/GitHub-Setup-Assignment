@@ -1,5 +1,5 @@
 # Compiler and flags
-CC = "c:/mingw/bin/gcc"
+CC = c:/mingw/bin/gcc
 CFLAGS = -Wall -g
 
 # Source files
